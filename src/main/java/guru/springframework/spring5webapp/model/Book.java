@@ -4,6 +4,9 @@ import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Created by jt on 5/16/17.
+ */
 @Entity
 public class Book {
 
@@ -12,6 +15,7 @@ public class Book {
     private Long id;
     private String title;
     private String isbn;
+
     @OneToOne
     private Publisher publisher;
 
